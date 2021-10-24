@@ -27,6 +27,7 @@ const Spend = () => {
               setFirst(false)
             }
         }
+// eslint-disable-next-line react-hooks/exhaustive-deps
           }, [control , isInView ]);
     return (
 

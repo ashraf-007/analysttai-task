@@ -16,10 +16,10 @@ footer{
 .el1 ul{
     margin-top: 30px;
 }
-.el1 a{
+.el1 button{
     padding: 3px 7px;
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     border:1px solid var(--main);
     margin-right: 10px;
@@ -28,13 +28,16 @@ footer{
 
     
 }
-.el1 a:hover{
+.el1 button:hover{
    background:none;
    color: white;
    border:1px solid white;
 }
 .el1 ul{
     margin-bottom: 30px;
+}
+.el1 p{
+   font-size: 15px;
 }
 .column{
     position: relative;
@@ -50,7 +53,7 @@ footer{
 .column li , #blog-pricing li{
     margin-bottom: 20px;
 }
-.column li a:hover , #blog-pricing li a:hover{
+.column li button:hover , #blog-pricing li button:hover{
    color: var(--main);
 }
 
@@ -85,6 +88,13 @@ footer{
 }
 .bottom p:hover{
   color: white;
+}
+.email{
+    font-size: 14px;
+    cursor: pointer;
+}
+.email:hover{
+ color: var(--main);
 }
 @media only screen and (max-width:720px) {
     .footer{

@@ -9,21 +9,21 @@ const Footer = () => {
             <div className="el1">
                 <img src={logo} alt="" />
                 <p>Leadzen.ai is the most intelligent lead generation tool as it integrates artificial intelligence and real-time updates into the prospecting process.</p>
-                <ul className='flex justify-center items-center'>
+                <ul className='flex justify-start items-center'>
                     <li>
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <button><i class="fab fa-facebook-f"></i></button>
                     </li>
                     <li>
-                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <button><i class="fab fa-twitter"></i></button>
                     </li>
                     <li>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <button><i class="fab fa-linkedin-in"></i></button>
                     </li>
                     <li>
-                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <button><i class="fab fa-instagram"></i></button>
                     </li>
                 </ul>
-                <p>support@leadzen.ai</p>
+                <p className="email">support@leadzen.ai</p>
             </div>
             <div id='column1' className="column">
             <h2>leadzen.ai</h2>
@@ -31,7 +31,7 @@ const Footer = () => {
                 <ul>
                 { column1.map((el)=>(
                     <li key={el.id}>
-                        <a href="">{el.text}</a>
+                        <button>{el.text}</button>
                     </li>
 
                 ))}
@@ -45,7 +45,7 @@ const Footer = () => {
 
                 { column2.map((el)=>(
                     <li key={el.id}>
-                        <a >{el.text}</a>
+                        <button>{el.text}</button>
                     </li>
 
                 ))}
@@ -55,10 +55,10 @@ const Footer = () => {
             <div id='blog-pricing'>
                 <ul>
                     <li>
-                        <a href="">Blog</a>
+                        <button>Blog</button>
                     </li>
                     <li>
-                        <button className='pricing-btn'>Pricing</button>
+                        <p className='pricing-btn'>Pricing</p>
                     </li>
                 </ul>
             </div>

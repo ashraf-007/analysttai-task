@@ -17,14 +17,18 @@
     align-items: center;
     padding: 10px;
 }
-.ul li a {
-    padding: 12px 14px;
+.ul li button {
+    padding: 12px ;
+    margin: 0 10px;
     border-radius:20px ;
+    transition: all 0.4s ease;
 
 }
-.ul li a:hover {
+.ul li button:hover {
     background-color: #50331C;
     color: var(--main);
+    transition: all 0.4s ease;
+
 
 }
 .nav-btn{
@@ -33,10 +37,14 @@
     padding: 8px 25px;
     border-radius: 40px 0 40px 40px;
     font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
 }
 .nav-btn:hover{
     background-color:white;
     color: #50331C;
+    transition: all 0.4s ease;
 
 }
 .burger{
@@ -65,7 +73,7 @@
         margin: 0 20px;
         padding:20px;
     }
-    .ul li a:hover {
+    .ul li button:hover {
         background-color: unset;
         color: unset;
     
@@ -81,8 +89,7 @@
         text-align: center;
       
     }
-    .ul li a:last-child {
-        /* padding: 90PX; */
+    .ul li button:last-child {
         margin: 0;
         border-radius:20px ;
     

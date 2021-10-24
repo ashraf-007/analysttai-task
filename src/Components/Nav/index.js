@@ -1,7 +1,5 @@
 import React , { useState , useEffect } from 'react'
 import {
-  Switch,
-  Route,
   Link
 } from "react-router-dom";
 import './nav.css'
@@ -9,9 +7,6 @@ import logo from '../../images/logo.png'
 import { motion } from 'framer-motion'
 
 
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-  }
 
 const Nav = () => {
   const [ open , setOpen ] = useState(false)
@@ -40,9 +35,8 @@ useEffect(() => {
     
 
    })
-   console.log('wid' , wid)
-   console.log('isMobile' , isMobile)
-
+  
+// eslint-disable-next-line react-hooks/exhaustive-deps
 }, [wid])
     return (
         <>
@@ -63,19 +57,19 @@ useEffect(() => {
                 // style={{transform: !isMobile && 'translateY(0)'}}
                className='ul'>
                   <li onClick={()=> setOpen(false)}>
-                      <a>Why us</a>
+                      <button>Why us</button>
                   </li>
                   <li onClick={()=> setOpen(false)}>
-                    <a>Use Cases <i class="fas fa-chevron-down"></i></a>
+                    <button>Use Cases <i class="fas fa-chevron-down"></i></button>
                   </li>
                   <Link to='/pricing' onClick={()=> setOpen(false)}>
                   <li className='tag'>
-                    <a >Pricing</a>
+                    <button >Pricing</button>
                   </li>
                   </Link>
 
                   <li className='none'>
-                    <button className='nav-btn' href="#">Get Started</button>
+                    <p className='nav-btn'>Get Started</p>
                   </li>
               </motion.ul>
              

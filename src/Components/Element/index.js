@@ -57,12 +57,13 @@ const showElement2 = {
     if(first){
         if (isInView) {
             control.start('visible');
-            id==7 &&  imgControl.start('show')
-            id==8 && titleControl.start('show') 
-            id==9 &&  imgControl.start('show')
+            id === 7 &&  imgControl.start('show')
+            id === 8 && titleControl.start('show') 
+            id === 9 &&  imgControl.start('show')
           setFirst(false)
         }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [control , isInView ]);
 
     return (
@@ -74,20 +75,20 @@ const showElement2 = {
 
     
         className="element">
-            <img className='left' style={{ left: id==9 && '-40%'}} src={leftLines}alt="" />
+            <img className='left' style={{ left: id===9 && '-40%'}} src={leftLines}alt="" />
             <img className='right' style={{ display:'none'}}src={rightLines} alt="" />
 
             { heading && <motion.h1
               animate={titleControl}
               initial='hidden'
-              variants={ id==8 && titleVar}
+              variants={ id ===8 && titleVar}
             >{heading}</motion.h1> }
 
             { title && <h2>{title}</h2> }
             { text && <motion.p
              animate={titleControl}
              initial='hidden'
-             variants={ id==8 && textVar}
+             variants={ id === 8 && textVar}
             >{text}</motion.p> }
 
             { span && <span>{span}</span> }
@@ -96,8 +97,8 @@ const showElement2 = {
              <motion.img 
                         initial='hidden'
                         animate={imgControl}
-                        variants={id==7  || id==9 && img}
-             style={{ width : id==9  && '810px' ,height : id==9 && '400PX' , margin:'10px auto'}}  className={id!=9 && 'img'} src={image} alt="" /> }
+                        variants={( id ===7  || id === 9 ) && img}
+             style={{ width : id === 9  && '810px' ,height : id === 9 && '400PX' , margin:'10px auto'}}  className={id !== 9 && 'img'} src={image} alt="" /> }
 
 
             { video && 

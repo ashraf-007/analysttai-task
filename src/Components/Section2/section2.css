@@ -45,12 +45,12 @@
 .left-lines{
     position: absolute;
     top: 45%;
-    left: -35%;
+    left: -90%;
 }
 .right-lines{
     position: absolute;
     top: 45%;
-    right: -45%;
+    right: -90%;
 }
 .dots-btn{
     height:20px;

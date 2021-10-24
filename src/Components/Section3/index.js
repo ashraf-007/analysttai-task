@@ -13,10 +13,7 @@ const showElement = {
     visible: { opacity: [0 ,1], x:[ -600 ,0] , transition: { duration: 1 , ease:'easeIn'} },
     hidden: { opacity: 0, x:-600 }
   };
-  const showElement2 = {
-    visible: { opacity:[0, 1],scale:1, transition: { duration: 1 , ease:'easeIn'} },
-    hidden: { opacity: 0, scale:0 }
-  };
+
   const [firstTime , setFirstTime  ] = useState(true)
 const control1 = useAnimation();
 const [ref, inView] = useInView();
@@ -28,6 +25,8 @@ useEffect(() => {
             setFirstTime(false)
           }
     }
+
+// eslint-disable-next-line react-hooks/exhaustive-deps
   }, [control1 , inView]);
  
 let [wid , setWid ] = useState(window.innerWidth)
@@ -43,6 +42,7 @@ useEffect(() => {
 
    })
    console.log('wid' , wid)
+// eslint-disable-next-line react-hooks/exhaustive-deps
 
 }, [wid])
 

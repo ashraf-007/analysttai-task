@@ -1,7 +1,6 @@
 import React from 'react'
 import './feature.css'
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 
 const Feature = ({ feature : { text , icon} , index }) => {
@@ -10,7 +9,7 @@ const Feature = ({ feature : { text , icon} , index }) => {
         show: { opacity: 1 , scale: [ 0 , 1.1 ,1 ],
             transition : {
                 duration : 0.5,
-                delay : index == 1 ? 1 : index == 2 ? 2 : 0
+                delay : index === 1 ? 1 : index === 2 ? 2 : 0
             }
          }
       }
