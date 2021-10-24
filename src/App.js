@@ -1,24 +1,52 @@
-import logo from './logo.svg';
+import React, { useEffect } from "react";
+import {
+  Switch,
+  Route,
+} from "react-router-dom";
 import './App.css';
+import Nav from './Components/Nav'
+import Hero from './Components/Hero'
+import Section2 from './Components/Section2'
+import Section3 from './Components/Section3'
+import Trusted from './Components/Trusted'
+import Testimonial from './Components/Testimonial'
+import Persona from './Components/Persona';
+import Footer from './Components/Footer';
+import PricingPage from './Components/PricingPage'
 
 function App() {
+ 
   return (
+    // <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Nav/>
+
+    <Switch>
+    <Route exact path="/">
+      <>
+
+     <Hero />
+     <Section2 />
+     <Section3 />
+     <Trusted />
+     <Testimonial />
+     <Persona />
+     </>
+     </Route>
+
+     <Route exact path='/pricing'>
+      <PricingPage />
+     </Route>
+
+     </Switch>
+  
+
+     <Footer />
     </div>
+        
+  
+    // </Router>
+
   );
 }
 

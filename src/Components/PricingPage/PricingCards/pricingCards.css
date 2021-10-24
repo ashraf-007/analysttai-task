@@ -1,0 +1,80 @@
+.pricing-cards{
+   display: grid;
+   place-content: center;
+   text-align: center;
+   margin: 30px auto;
+   width: 100%;
+}
+
+.pricing-labels{
+    display: inline-block;
+    padding: 6px;
+     background-color: #fff8e5;
+     border-radius: 50px;
+     margin-bottom: 30px;
+}
+.pricing-labels button{
+       font-weight: 600;
+       text-transform: capitalize;
+       padding: 10px 0; 
+       width: 132px;
+       margin: 0 5px ;
+       border-radius: 40px;
+
+}
+.pricing-labels button:hover{
+background-color: var(--main);
+color: white;
+}
+.pricing-labels button:focus{
+background-color: var(--main);
+color: white;
+}
+
+.ads{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px 0;
+}
+.ads span{
+   font-weight: bold;
+}
+.ads p{
+   margin-left: 20px;
+}
+.tax{
+   text-align: right;
+   margin-right: 10px;
+   margin: 10px 20px;
+}
+.cards-container{
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      place-content: center;
+      margin: 0 auto;
+}
+
+
+@media only screen and (max-width:1308px) {
+      .cards-container{
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          gap: 20px;
+      }
+  }
+
+  @media only screen and (max-width:870px) {
+   .cards-container{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+
+
+  }
+  } 
+  @media only screen and (max-width:558px) {
+   .cards-container{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);      
+  } 
+}

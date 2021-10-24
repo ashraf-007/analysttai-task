@@ -1,0 +1,115 @@
+.nav{
+    background-color: var(--main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 2% 5%;
+    position: sticky;
+    top: 0;
+    z-index: 30000;
+}
+.ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.ul li a {
+    padding: 12px 14px;
+    border-radius:20px ;
+
+}
+.ul li a:hover {
+    background-color: #50331C;
+    color: var(--main);
+
+}
+.nav-btn{
+    background-color: #50331C;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 40px 0 40px 40px;
+    font-weight: 600;
+}
+.nav-btn:hover{
+    background-color:white;
+    color: #50331C;
+
+}
+.burger{
+    display: none;
+}
+@media only screen and (max-width:725px) {
+   
+
+    .ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        right: 0%;
+        left: 0;
+        top: 10vh;
+        width: 100vw;
+        border-radius: 40px;
+        overflow: hidden;
+        padding:0px;
+
+    }
+    .ul li {
+        margin: 0 20px;
+        padding:20px;
+    }
+    .ul li a:hover {
+        background-color: unset;
+        color: unset;
+    
+    }
+   
+    .tag{
+        background-color: #50331C;
+        color: white;
+        padding: 8px 25px;
+        border-radius: 0 0 40px 40px;
+        font-weight: 600;
+        width: 100vw;
+        text-align: center;
+      
+    }
+    .ul li a:last-child {
+        /* padding: 90PX; */
+        margin: 0;
+        border-radius:20px ;
+    
+    }
+    .none{
+        display: none;
+    }
+    .burger{
+        background-color: white;
+        height: 50px;
+        width: 50px;
+        z-index: 30;
+        display: grid;
+        place-content: center;
+        border: 3px solid #50331C ;
+        border-radius: 20px;
+    }
+    .burger i{
+        color:#50331C ;
+        height: 100%;
+        width: 100%;
+        font-size: 30px;
+    }
+    .ul-container{
+    
+        overflow: hidden;
+    }
+}
+
+

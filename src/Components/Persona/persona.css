@@ -1,0 +1,26 @@
+.persona-text{
+    display: none;
+    background-color: var(--main);
+    margin: 20px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.persona-text h2{
+    font-size: 22px;
+    font-weight: 700;
+}
+.persona-text p{
+    font-size: 14px;
+     width: 90%;
+     margin: 10px auto;
+}
+@media only screen and (max-width:1000px){
+    .persona img{
+        display: none;
+    }
+    .persona-text{
+        display: block;
+    }
+    
+}

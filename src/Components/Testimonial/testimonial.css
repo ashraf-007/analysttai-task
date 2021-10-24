@@ -1,0 +1,33 @@
+.testimonial{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    margin-top: 30px;
+}
+
+.left-part{
+    background-color: var(--main);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: CENTER;
+    padding:60px;
+}
+.left-part h1{
+   font-size: 40px;
+   font-weight: 700;
+}
+.left-part p{
+    width: 70%;
+ }
+.right-part{
+    height: 100%;
+    width: 100%;
+
+    background-color: #FFECB9;
+}
+.right-part img{
+    position: relative;
+    top: 1%;
+    
+}

@@ -1,0 +1,97 @@
+footer{
+    background-color: #0B0D17;
+    /* height: 80vh; */
+    height: auto;
+    padding: 6% 7%;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: CENTER;
+    gap: 40px;
+    color: white;
+}
+
+.el1 ul{
+    margin-top: 30px;
+}
+.el1 a{
+    padding: 3px 7px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    border:1px solid var(--main);
+    margin-right: 10px;
+   background-color: var(--main);
+   color: black;
+
+    
+}
+.el1 a:hover{
+   background:none;
+   color: white;
+   border:1px solid white;
+}
+.el1 ul{
+    margin-bottom: 30px;
+}
+.column{
+    position: relative;
+    bottom: 30px;
+}
+.column h2{
+    margin: 20px 0;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+.column li , #blog-pricing li{
+    margin-bottom: 20px;
+}
+.column li a:hover , #blog-pricing li a:hover{
+   color: var(--main);
+}
+
+
+.pricing-btn{
+    background-color: #252A43;
+    border-radius: 15px;
+    padding: 12px 24px;
+    font-size: 15px;
+}
+.pricing-btn:hover{
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 12px 24px;
+    font-size: 15px;
+    color: black;
+}
+#blog-pricing{
+    position: relative;
+    bottom: 20px;
+}
+
+.bottom{
+ margin-top: 80px;
+
+}
+.bottom p{
+    cursor: pointer;
+    color: #D9DBE1;
+    margin: 0 20px;
+    font-size: 13px;
+}
+.bottom p:hover{
+  color: white;
+}
+@media only screen and (max-width:720px) {
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-items: CENTER;
+        gap: 40px;
+        color: white;
+    }
+}

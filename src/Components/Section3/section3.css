@@ -1,0 +1,57 @@
+.element{
+    text-align: center;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+}
+.img{
+    max-width: 482px;
+    max-height: 375px;
+    margin: 0 auto;
+    margin-top:20px ;
+}
+.element h1{
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.element h2{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 15px 0;
+}
+.element p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.left{
+    position: absolute;
+    left: -30%;
+    top: 3%;
+}
+.right{
+    position: absolute;
+    right: -30%;
+    bottom: 30%;
+}
+
+.video-container{
+    max-height: 366px;
+    max-width:571px;
+    border: 13px solid #54595F;
+    border-radius: 20px;
+    
+}
+@media only screen and (max-width:1000px){
+    .left , .right{
+        display: none;
+    }
+    
+    
+}

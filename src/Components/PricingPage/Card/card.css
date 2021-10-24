@@ -1,0 +1,65 @@
+.card{
+    height: 443px;
+    width: 250px;
+    border: 5px solid var(--main);
+    border-radius: 15px;
+    margin-right: 10px;
+    position: relative;
+}
+.card-head{
+    height: 70px;
+    background-color: var(--main);
+    display: grid;
+    place-content: center;  
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.card-detail{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px dashed var(--main);
+    text-align: center;
+    color: #291200;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.price{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 2em;
+    letter-spacing: 0px;
+    padding: 5px;
+    background-color: var( --main);
+    border-radius: 50px;
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.buy{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+    background-color: #50331C;
+    /* padding: 10px; */
+    border-radius: 0px 0px 10px 10px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+}
+.buy:hover{
+    color: #50331C;
+    background-color: var(--main);
+   
+}

@@ -1,0 +1,31 @@
+.item{
+    margin-top: 20px;
+}
+.item h3{
+    padding:9px ;
+    background-color: var(--main);
+    display: grid;
+    place-content: center;
+    border-radius: 40px;
+    font-weight: 600;
+    width: 90%;
+    margin: 0 auto;
+}
+.el{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin :20px;
+
+}
+
+.item ul li {
+    font-size: 14px;
+}
+.item ul li i{
+    color: var(--main); 
+    margin-right: 5px;
+    padding-bottom: 20px;
+    position: relative;
+    top: 3px;
+}
